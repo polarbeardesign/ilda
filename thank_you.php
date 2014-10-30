@@ -1,10 +1,6 @@
 <?php
 
-
-
-$to = 'jim@polarbeardesign.net';
-#$to = 'jim@polarbeardesign.net, lisa@sentodesign.com';
-#$to = 'lee.leffingwell@austintexas.gov, Laura.Morrison@austintexas.gov, Chris.Riley@austintexas.gov, sheryl.cole@austintexas.gov, Mike.Martinez@austintexas.gov, bill.spelman@austintexas.gov, kathie.tovo@austintexas.gov';
+$to = 'lee.leffingwell@austintexas.gov, Laura.Morrison@austintexas.gov, Chris.Riley@austintexas.gov, sheryl.cole@austintexas.gov, Mike.Martinez@austintexas.gov, bill.spelman@austintexas.gov, kathie.tovo@austintexas.gov';
 
 $citizen_name = $_POST['citizen_name'];
 $citizen_phone = $_POST['citizen_phone'];

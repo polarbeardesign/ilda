@@ -8,23 +8,31 @@ $citizen_email = $_POST['citizen_email'];
 $citizen_state = $_POST['citizen_state'];
 $subject = $_POST['email_subject'];
 $message = $_POST['message'];
-$headers = 'From: ' . $citizen_email . '
+$headers = 'From: concerned_citizen@ilovedowntownaustin.org 
 Cc: '. $citizen_email . ' 
 Bcc: ilovedowntownaustin@gmail.com ';
 
 
 if ($citizen_name == "")
   {
-    $citizen_name = "Concerned Citizen";
+    $signature = "Concerned Citizen";
+  }
+elseif ($citizen_name != "" && $citizen_phone != "")
+  {
+    $signature = ucwords($citizen_name) . ", " . $citizen_phone . " | " . $citizen_email;
+  }
+else 
+  {
+    $signature = ucwords($citizen_name) . ", " . $citizen_email;
   }
 
-$message .= "
-$citizen_name 
-$citizen_phone";
+$final_message = $signature . "
+" . $message . "
+" . $signature;
 
 if ($citizen_state == "" && $citizen_email != "")
   {
-    mail($to, $subject, $message, $headers);
+//    mail($to, $subject, $message, $headers);
   }
 
 ?>

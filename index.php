@@ -43,7 +43,7 @@ date_default_timezone_set('America/Chicago');
 </div>
 
 <div class="the-form">
-<p>TELL THE MAYOR AND CITY COUNCIL to amend the City of Austin Code, section 9-2, 
+<p>EMAIL THE MAYOR AND CITY COUNCIL to amend the City of Austin Code, section 9-2, 
 to limit downtown construction to the same hours as the rest of the City: 7AM to 7PM! 
 Come to the City Council Meeting on Thursday, November 6th to show your support!</p>
 
@@ -76,7 +76,10 @@ Thank you for your time and consideration.
 
 Sincerely,
 </textarea>
-  <input type="submit" class="narrow" />
+  <input type="submit" value="Send Email" class="narrow" />
+<div style="text-align:center;margin-bottom: 1em;">
+  <span class="form-tip">An email will be sent to the mayor and all city council members.</span>
+</div>
 </form>
 </div>
 </section>
